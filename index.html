@@ -1,1 +1,15 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>My Consolidated App</h1>
+    <div id="app1-data">Loading data...</div>
+
+    <script>
+      fetch('https://script.google.com/macros/s/AKfycbywSyplfUN-QpbK6Ch7Z-D9hOwSnhj9cgpvLL6OocqsebLlr8CzkfRs_yrYeKQX_rkKRg/exec')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('app1-data').innerText = data.message;
+        });
+    </script>
+  </body>
+</html>
