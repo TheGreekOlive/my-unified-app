@@ -16,7 +16,8 @@
     <div id="app1-data">Loading data...</div>
 
     <script>
-      fetch('https://script.google.com/macros/s/AKfycbyC2X-wJ-pQz-63qAglzYkYh_a3yU5l3g3J/exec')
+      // Paste your actual deployment URL inside the quotes below:
+      fetch('https://script.google.com/macros/s/AKfycbywSyplfUN-QpbK6Ch7Z-D9hOwSnhj9cgpvLL6OocqsebLlr8CzkfRs_yrYeKQX_rkKRg/exec')
         .then(response => response.json())
         .then(data => {
           document.getElementById('app1-data').innerText = data.title;
