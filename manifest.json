@@ -1,20 +1,28 @@
 {
+  "id": "my-unified-app-id",
   "name": "My Consolidated App",
   "short_name": "My Hub",
+  "description": "Unified dashboard mobile app consolidating Google Apps Script web apps.",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#ffffff",
   "theme_color": "#000000",
+  "lang": "en",
+  "dir": "ltr",
   "icons": [
     {
-      "src": "https://via.placeholder.com/192",
+      "src": "./icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "src": "https://via.placeholder.com/512",
+      "src": "./icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
