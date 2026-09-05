@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Consolidated App</title>
+    <link rel="manifest" href="./manifest.json">
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js');
+      }
+    </script>
+  </head>
   <body>
     <h1>My Consolidated App</h1>
     <div id="app1-data">Loading data...</div>
 
     <script>
-      fetch('YOUR_APPS_SCRIPT_URL_HERE')
+      fetch('https://script.google.com/macros/s/AKfycbyC2X-wJ-pQz-63qAglzYkYh_a3yU5l3g3J/exec')
         .then(response => response.json())
         .then(data => {
-          // Display the title from your Apps Script JSON response
-          document.getElementById('app1-data').innerText = data.title; 
+          document.getElementById('app1-data').innerText = data.title;
         })
         .catch(error => {
           console.error('Error:', error);
